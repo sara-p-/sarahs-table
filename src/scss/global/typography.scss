@@ -118,3 +118,23 @@ blockquote {
   margin: 0;
   padding: 0;
 }
+
+.text {
+  &-align {
+    &--center {
+      text-align: center;
+    }
+    &--left {
+      text-align: center;
+      @include tablet-landscape-up {
+        text-align: left;
+      }
+    }
+    &--right {
+      text-align: center;
+      @include tablet-landscape-up {
+        text-align: right;
+      }
+    }
+  }
+}
