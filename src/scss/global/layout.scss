@@ -9,7 +9,7 @@
 }
 
 html {
-  background-color: $viewport-background-color;
+  background-color: var(--primary-color);
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -35,7 +35,7 @@ body {
   }
   &__wrapper {
     width: 100%;
-    max-width: $site-width-extra-large;
+    max-width: var(--site-width-xl);
     margin: auto;
     padding: 0 32px;
   }
@@ -45,7 +45,7 @@ body {
   }
   &__col {
     flex: 1;
-    padding: 0 $spacing-24;
+    padding: 0 var(--spacing-24);
     &--flex {
       height: 100%;
       @include flex;

@@ -1,122 +1,78 @@
 @use './variables.scss' as *;
 @use './mixins.scss' as *;
 
-html,
+html {
+  font-size: var(--mobile-font-size);
+
+  @include tablet-portrait-up {
+    font-size: var(--tablet-font-size);
+  }
+  @include desktop-up {
+    font-size: var(--base-font-size);
+  }
+}
 p,
 .p,
 p span {
-  font-family: $base-font-family;
-  font-weight: $base-font-weight;
-  line-height: $base-line-height;
-  font-size: $base-font-size;
+  font-family: var(--base-font-family);
+  font-weight: var(--base-font-weight);
+  line-height: var(--base-line-height);
+  color: var(--secondary-color);
   -webkit-font-smoothing: antialiased;
-  color: $base-font-color;
-  @include tablet-portrait-up {
-    font-size: $mobile-font-size;
-  }
 }
 
 p {
-  margin: 0 0 20px 0;
+  margin: 0 0 1rem 0;
 }
 
 h1,
 .h1 {
-  @include heading-style(64px, $heading-font-family, 900);
-  @include tablet-portrait-up {
-    font-size: 36px;
-  }
+  @include heading-style(var(--h1-font-size));
 }
 
 h2,
 .h2 {
-  @include heading-style(48px, $heading-font-family, 900);
-  // letter-spacing: 0.02px;
-  @include tablet-portrait-up {
-    font-size: 34px;
-  }
+  @include heading-style(var(--h2-font-size));
 }
 
 h3,
 .h3 {
-  @include heading-style(36px, $base-font-family, 300);
-  @include tablet-portrait-up {
-    font-size: 24px;
-  }
+  @include heading-style(var(--h3-font-size));
 }
 
 h4,
 .h4 {
-  @include heading-style(24px, $base-font-family, 500);
-  @include tablet-portrait-up {
-    font-size: 18px;
-  }
+  @include heading-style(var(--h4-font-size));
 }
 
 h5,
 .h5 {
-  @include heading-style(24px, $base-font-family, 400);
-  text-transform: none;
-  line-height: 32px;
-  @include tablet-portrait-up {
-    font-size: 16px;
-  }
+  @include heading-style(var(--h5-font-size));
 }
 
 h6,
 .h6 {
-  @include heading-style(14px, $base-font-family, 500);
+  @include heading-style(var(--h6-font-size));
 }
 
-a,
-.styled-btn {
-  color: $black;
-  transition: all $base-duration $base-timing;
-  padding: 3px;
-  background: transparent;
-  line-height: 1;
-  position: relative;
-  display: block;
-  overflow: hidden;
-  border: none;
-  z-index: 1;
-  &:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    transform: translateX(-101%);
-    transition: all $base-duration $base-timing;
-    background: $black;
-    z-index: -1;
+.section__content {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 1rem;
   }
+}
+
+.link {
+  color: var(--secondary-color);
+  text-decoration: underline;
   &:hover,
   &:focus {
-    color: $off-white;
-    &::before {
-      transform: translateX(0%);
-    }
+    color: var(--accent-color);
   }
-  &:focus {
-    outline: $focus-outline;
-    outline-offset: 1px;
-  }
-}
-
-hr {
-  border-bottom: $base-border;
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
-  margin: $spacing-24 0;
-}
-
-blockquote {
-  position: relative;
-  margin: 0;
-  padding: 0;
 }
 
 .text {

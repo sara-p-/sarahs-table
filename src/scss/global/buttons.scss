@@ -5,11 +5,20 @@
   width: 100%;
 }
 
-button,
 .button {
-  @include clear-btn;
-  @include btn-base;
-  &--primary {
+  @include clear-button;
+  &--contact {
     @extend .button;
+    @include heading-style(6rem);
+    &.hover,
+    &:hover,
+    &:focus {
+      background: transparent;
+      color: var(--accent-color);
+    }
+  }
+  &--clear {
+    @include clear-button;
+    padding: 0;
   }
 }
