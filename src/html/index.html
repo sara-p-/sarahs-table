@@ -8,53 +8,218 @@
     ></script>
   </head>
   <body>
-    <header class="header">
-      <div class="header__wrapper">
-        <div class="header__row">
-          <div class="header__col">
-            <a href="/" class="logo">
-              <img
-                src="<%=require('../../images/placeholder-logo.svg')%>"
-                alt="Logo"
-                class="logo__image"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-    </header>
     <main>
       <section class="section">
         <div class="section__wrapper">
           <div class="section__row">
             <div class="section__col">
-              <h1>Project Title</h1>
-            </div>
-            <div class="section__col">
-              <img
-                class="image--contain"
-                src="<%=require('../../images/folder.svg')%>"
-                alt="folder"
-              />
+              <table class="table">
+                <caption class="table__caption">
+                  Wedding Collection Pricing
+                </caption>
+                <thead class="table__head">
+                  <tr class="table__row">
+                    <th class="table__heading" scope="col">
+                      <span class="sr-only">Services</span>
+                    </th>
+                    <th class="table__heading" scope="col">
+                      Complete Collection
+                    </th>
+                    <th class="table__heading" scope="col">
+                      Photo + Video Collection
+                    </th>
+                    <th class="table__heading" scope="col">
+                      Photography Collection
+                    </th>
+                    <th class="table__heading" scope="col">Wedding Base</th>
+                  </tr>
+                </thead>
+                <tbody class="table__body">
+                  <tr class="table__row">
+                    <th class="table__heading" scope="row">
+                      Hours of continuous coverage
+                    </th>
+                    <td class="table__data">10h</td>
+                    <td class="table__data">8h</td>
+                    <td class="table__data">8h</td>
+                    <td class="table__data">7h</td>
+                  </tr>
+                  <tr class="table__row">
+                    <th class="table__heading" scope="row">
+                      Meticulously edited photos in a shareable, online gallery
+                    </th>
+                    <td class="table__data">
+                      <span class="icon--check"></span>
+                    </td>
+                    <td class="table__data">
+                      <span class="icon--check"></span>
+                    </td>
+                    <td class="table__data">
+                      <span class="icon--check"></span>
+                    </td>
+                    <td class="table__data">
+                      <span class="icon--check"></span>
+                    </td>
+                  </tr>
+                  <tr class="table__row">
+                    <th class="table__heading" scope="row">
+                      Unlimited high-resolution downloads
+                    </th>
+                    <td class="table__data">
+                      <span class="icon--check"></span>
+                    </td>
+                    <td class="table__data">
+                      <span class="icon--check"></span>
+                    </td>
+                    <td class="table__data">
+                      <span class="icon--check"></span>
+                    </td>
+                    <td class="table__data">
+                      <span class="icon--check"></span>
+                    </td>
+                  </tr>
+                  <tr class="table__row">
+                    <th class="table__heading" scope="row">
+                      2-years gallery hosting
+                    </th>
+                    <td class="table__data">
+                      <span class="icon--check"></span>
+                    </td>
+                    <td class="table__data">
+                      <span class="icon--check"></span>
+                    </td>
+                    <td class="table__data">
+                      <span class="icon--check"></span>
+                    </td>
+                    <td class="table__data">
+                      <span class="icon--check"></span>
+                    </td>
+                  </tr>
+                  <tr class="table__row">
+                    <th class="table__heading" scope="row">
+                      Two photographers
+                    </th>
+                    <td class="table__data">
+                      <span class="icon--check"></span>
+                    </td>
+                    <td class="table__data">
+                      <span class="icon--circle"></span>
+                    </td>
+                    <td class="table__data">
+                      <span class="icon--circle"></span>
+                    </td>
+                    <td class="table__data">
+                      <span class="icon--circle"></span>
+                    </td>
+                  </tr>
+                  <tr class="table__row">
+                    <th class="table__heading" scope="row">
+                      3-5 minute highlight video
+                    </th>
+                    <td class="table__data">
+                      <span class="icon--check"></span>
+                    </td>
+                    <td class="table__data">
+                      <span class="icon--check"></span>
+                    </td>
+                    <td class="table__data">
+                      <span class="icon--circle"></span>
+                    </td>
+                    <td class="table__data">
+                      <span class="icon--circle"></span>
+                    </td>
+                  </tr>
+                  <tr class="table__row">
+                    <th class="table__heading" scope="row">
+                      Raw video footage of the ceremony, toasts, and special
+                      dances
+                    </th>
+                    <td class="table__data">
+                      <span class="icon--check"></span>
+                    </td>
+                    <td class="table__data">
+                      <span class="icon--circle"></span>
+                    </td>
+                    <td class="table__data">
+                      <span class="icon--circle"></span>
+                    </td>
+                    <td class="table__data">
+                      <span class="icon--circle"></span>
+                    </td>
+                  </tr>
+                  <tr class="table__row">
+                    <th class="table__heading" scope="row">
+                      $300 credit towards an heirloom album
+                    </th>
+                    <td class="table__data">
+                      <span class="icon--check"></span>
+                    </td>
+                    <td class="table__data">
+                      <span class="icon--check"></span>
+                    </td>
+                    <td class="table__data">
+                      <span class="icon--check"></span>
+                    </td>
+                    <td class="table__data">
+                      <span class="icon--circle"></span>
+                    </td>
+                  </tr>
+                  <tr class="table__row">
+                    <th class="table__heading" scope="row">
+                      Film photography upgrade
+                    </th>
+                    <td class="table__data">
+                      <span class="icon--check"></span>
+                    </td>
+                    <td class="table__data">
+                      <span class="icon--circle"></span>
+                    </td>
+                    <td class="table__data">
+                      <span class="icon--circle"></span>
+                    </td>
+                    <td class="table__data">
+                      <span class="icon--circle"></span>
+                    </td>
+                  </tr>
+                  <tr class="table__row">
+                    <th class="table__heading" scope="row">
+                      Engagement session
+                    </th>
+                    <td class="table__data">
+                      <span class="icon--check"></span>
+                    </td>
+                    <td class="table__data">
+                      <span class="icon--circle"></span>
+                    </td>
+                    <td class="table__data">
+                      <span class="icon--check"></span>
+                    </td>
+                    <td class="table__data">
+                      <span class="icon--circle"></span>
+                    </td>
+                  </tr>
+                  <tr class="table__row">
+                    <th class="table__heading" scope="row">
+                      Turnaround for sneak peek
+                    </th>
+                    <td class="table__data">48h</td>
+                    <td class="table__data">72h</td>
+                    <td class="table__data">72h</td>
+                    <td class="table__data">96h</td>
+                  </tr>
+                  <tr class="table__row">
+                    <th class="table__heading" scope="row">Total investment</th>
+                    <td class="table__data">$13,250</td>
+                    <td class="table__data">$6,700</td>
+                    <td class="table__data">$5,250</td>
+                    <td class="table__data">$3,900</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="footer__wrapper">
-        <div class="footer__row">
-          <div class="footer__col">
-            <a href="/" class="logo">
-              <img
-                src="<%=require('../../images/placeholder-logo.svg')%>"
-                alt="Home"
-                class="logo__image"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
   </body>
 </html>

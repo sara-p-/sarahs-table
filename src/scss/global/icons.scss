@@ -10,6 +10,21 @@
     font: var(--fa-font-solid);
     color: var(--secondary-color);
   }
+  &--circle {
+    @extend .icon;
+    &:after {
+      content: '\f111';
+      font-size: 0.5rem;
+      // padding-left: var(--spacing-8);
+    }
+  }
+  &--check {
+    @extend .icon;
+    &:after {
+      content: '\f00c';
+      // padding-left: var(--spacing-8);
+    }
+  }
   &--arrow-long-right {
     @extend .icon;
     &:after {
